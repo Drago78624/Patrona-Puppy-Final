@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="patrona">
+  <head>
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/564f634590d1bced690e0633/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+    <link rel="stylesheet" href="css/about.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+      integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../imgs/faviconn.png" />
+    <title>Patrona Puppy | About Us</title>
+  </head>
+  <body ng-controller="mainController">
+    <!--HEADER-->
+    <header class="header">
+      <!--A CONTAINER FOR CONVENIENCE-->
+      <div class="header-content">
+        <!--MAIN NAVBAR-->
+        <nav class="nav-bar">
+          <a href="../index.html" class="nav-bar__brand">
+            <div class="brand-logo">
+              <img src="../imgs/Paw_Print.svg" alt="" />
+            </div>
+            <div class="brand-name">Patrona<span>Puppy</span></div>
+          </a>
+          <div class="nav-bar__items">
+            <ul class="nav-bar__links">
+              <li class="nav-bar__link"><a href="../index.html">Home</a>
+              </li>
+              <li class="nav-bar__link">Blog +
+                <div class="dropdown">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                  <a href="../FAQ/faq.html" class="option">FAQ</a>
+                  <a href="about.html" class="option">About Us</a>
+                </div>
+              </li>
+              <li class="nav-bar__link"><a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+              </li>
+            </ul>
+            <div class="nav-bar__button">
+              <a href="../image gallery/image-gallery.html" class="btn">My Collection</a>
+            </div>
+            <div class="nav-bar__hamburger"  id="hamburger" ng-click="hamburger_menu=!hamburger_menu">
+              <i class="far fa-bars" id="ham-icon" ></i>
+            </div>
+        </nav>
+        <div class="navbar-dropdown u-display-block" id="menu" >
+          <ul class="navbar-dropdown__options" ng-class="{'u-hamburger-menu-full': hamburger_menu}">
+            <li class="navbar-dropdown__option">
+              <a href="../index.html" class="option">Home</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="#" class="option" id="blog" ng-click="blog_dropdown=!blog_dropdown">Blog &plus;</a>
+              <ul class="navbar-dropdown__option--menu" ng-class="{'u-blog_dropdown-full': blog_dropdown}">
+                <li class="menu-option">
+                  <a href="../nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../faq/faq.html" class="option">FAQ</a>
+                </li>
+                <li class="menu-option">
+                  <a href="about.html" class="option">About Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../image gallery/image-gallery.html" class="option ham-menu-btn my-collection">My Collection</a>
+            </li>
+          </ul>
+        </div>
+        <!--MAIN ANIMATED HEADER TEXT-->
+        <div class="header-text">
+          <h1 class="primary-heading">
+            <!--SEPARATING LINES FOR APPLICATION OF DIFFERENT ANIMATIONS-->
+            <span class="primary-heading__main">
+             all about us
+            </span>
+            <span class="primary-heading__sub">
+              have a look at us closely
+            </span>
+          </h1>
+          <a href="#about-us" class="btn">Find Out !</a>
+        </div>
+      </div>
+    </header>
+      <main>
+        <section class="about-us" id="about-us">
+            <div class="about-us__container">
+                <img src="imgs/index_1.jpg" alt="">
+              <div class="about-us__text">
+                <p>I met Rex - a very smart dog in our corps. He is an intelligent and courageous boy.
+                    <br><br>
+                    This smart boy accompanied with me in many missions and saved my life so many times. He is not only a friend, he is my family.
+                    <br><br>
+                    I used to think if just only me has this feeling but no, my comrades have the same feeling with their dogs. Isn't it incredible ?
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="about-us" id="about-us">
+            <div class="about-us__container">
+              <div class="about-us__text">
+                <p>After serving in the army, I returned and studied more about the dogs I had met and researched for new breeds as well.
+                    I did share about this with my friend - Chad and he is a vet doctor and he was so happy with the idea and supported it.
+                    <br><br>
+                    That's the reason I published this website to share about my experience as well as puppy care tips for everyone with the consultance from Chad.
+                </p>
+              </div>
+              <img src="imgs/index_2.jpg" alt="">
+            </div>
+          </section>
+          <section class="about-us" id="about-us">
+            <div class="about-us__container">
+                <img src="imgs/index_3.jpg" alt="">
+              <div class="about-us__text">
+                <p><span>Thank you for visiting our website.</span>
+                    <br><br>
+                    We hope you can find valuable information about dogs here and please share with us more about your story with your friend.
+                    <br><br>
+                    If you can't find an answer for your question right here, please feel free to send us a question, we will get back to you very soon.
+                </p>
+              </div>
+            </div>
+          </section>
+      </main>
+      <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__main">
+          <div class="column u-column-width">
+            <h4>About Patrona Puppy</h4>
+            <p>
+              This is website of a veteran want to share about all dogs she has met and research on. This is also a location for person love dogs and has desire to explore more about this creature.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../FAQ/faq.html">FAQ</a></li>
+              <li><a href="../Nutrition/nutrition.html">Dog Nutrition</a></li>
+              <li><a href="../gallery/gallery.html">Dog Breeds</a></li>
+              <li><a href="../image gallery/image-gallery.html">My Collection</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Follow Us On</h4>
+            <div class="social-media-handles">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="../script/script.js"></script>
+  </body>
+</html>

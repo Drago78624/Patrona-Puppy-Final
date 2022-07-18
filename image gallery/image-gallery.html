@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="patrona">
+  <head>
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/564f634590d1bced690e0633/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+    <link rel="stylesheet" href="css/image-gallery.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+      integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../imgs/faviconn.png" />
+    <title>Patrona Puppy | Gallery</title>
+  </head>
+  <body ng-controller="mainController">
+    <!--HEADER-->
+    <header class="header">
+      <!--A CONTAINER FOR CONVENIENCE-->
+      <div class="header-content">
+        <!--MAIN NAVBAR-->
+        <nav class="nav-bar">
+          <a href="../index.html" class="nav-bar__brand">
+            <div class="brand-logo">
+              <img src="../imgs/Paw_Print.svg" alt="" />
+            </div>
+            <div class="brand-name">Patrona<span>Puppy</span></div>
+          </a>
+          <div class="nav-bar__items">
+            <ul class="nav-bar__links">
+              <li class="nav-bar__link"><a href="../index.html">Home</a>
+              </li>
+              <li class="nav-bar__link">Blog +
+                <div class="dropdown">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                  <a href="../FAQ/faq.html" class="option">FAQ</a>
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </div>
+              </li>
+              <li class="nav-bar__link"><a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+              </li>
+            </ul>
+            <div class="nav-bar__button">
+              <a href="../image gallery/image-gallery.html" class="btn">My Collection</a>
+            </div>
+            <div class="nav-bar__hamburger"  id="hamburger" ng-click="hamburger_menu=!hamburger_menu">
+              <i class="far fa-bars" id="ham-icon" ></i>
+            </div>
+        </nav>
+        <div class="navbar-dropdown u-display-block" id="menu" >
+          <ul class="navbar-dropdown__options" ng-class="{'u-hamburger-menu-full': hamburger_menu}">
+            <li class="navbar-dropdown__option">
+              <a href="../index.html" class="option">Home</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="#" class="option" id="blog" ng-click="blog_dropdown=!blog_dropdown">Blog &plus;</a>
+              <ul class="navbar-dropdown__option--menu" ng-class="{'u-blog_dropdown-full': blog_dropdown}">
+                <li class="menu-option">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../faq/faq.html" class="option">FAQ</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="image-gallery.html" class="option ham-menu-btn my-collection">My Collection</a>
+            </li>
+          </ul>
+        </div>
+        <!--MAIN ANIMATED HEADER TEXT-->
+        <div class="header-text">
+          <h1 class="primary-heading">
+            <!--SEPARATING LINES FOR APPLICATION OF DIFFERENT ANIMATIONS-->
+            <span class="primary-heading__main">
+             My collection
+            </span>
+            <span class="primary-heading__sub">
+              collection of dogs images
+            </span>
+          </h1>
+          <a href="#images-gallery" class="btn">Take a look !</a>
+        </div>
+      </div>
+    </header>
+    <div id="images-gallery" class="container">
+        <div class="heading">
+        <h3>My <span>Collection</span></h3>
+        </div>
+        <div class="box">
+        <div class="dream">
+        <img src="imgs/flagged.jpg"/>
+        <img src="imgs/photo-1433162653888-a571db5ccccf.jpg"/>
+        <img src="imgs/photo-1455103493930-a116f655b6c5.jpg"/>
+        <img src="imgs/photo-1477868433719-7c5f2731b310.jpg"/>
+        <img src="imgs/photo-1478029973231-f42d99fe5c20.jpg"/>
+        <img src="imgs/photo-1504595403659-9088ce801e29.jpg"/>
+        <img src="imgs/photo-1504826260979-242151ee45b7.jpg"/>
+        <img src="imgs/photo-1506499422601-ecc792cf898e.jpg"/>
+        <img src="imgs/photo-1506780685701-ba404b9e640d.jpg"/>
+        <img src="imgs/photo-1506993708131-b0bf29d16b76.jpg"/>
+        <img src="imgs/photo-1507145569372-d69bae8bc9a0.jpg"/>
+        <img src="imgs/photo-1507146426996-ef05306b995a.jpg"/>
+        <img src="imgs/photo-1507665337076-eb6965c63fb7.jpg"/>
+        <img src="imgs/photo-1508687297578-7a7fb0455192.jpg"/>
+        <img src="imgs/photo-1508946558729-87abab0492de.jpg"/>
+        <img src="imgs/photo-1508948956644-0017e845d797.jpg"/>
+        <img src="imgs/photo-1509005084666-3cbc75184cbb.jpg"/>
+        <img src="imgs/photo-1509463545580-61e747a6a12f.jpg"/>
+        <img src="imgs/photo-1509559320938-387dfd4e966b.jpg"/>
+        <img src="imgs/photo-1510020553968-30f966e1ec9e.jpg"/>
+        <img src="imgs/photo-1510337550647-e84f83e341ca.jpg"/>
+        <img src="imgs/photo-1510771463146-e89e6e86560e.jpg"/>
+        <img src="imgs/photo-1512251275231-63e355f3d028.jpg"/>
+        <img src="imgs/photo-1512546321483-c0468b7b8a95.jpg"/>
+        <img src="imgs/photo-1513013156887-d2bf241c8c82.jpg"/>
+        <img src="imgs/photo-1513639725746-c5d3e861f32a.jpg"/>
+        <img src="imgs/photo-1514328525431-eac296c01d82.jpg"/>
+        <img src="imgs/photo-1514571948039-d3cb9e8f9750.jpg"/>
+        <img src="imgs/photo-1514895094592-76b5fb7667ee.jpg"/>
+        <img src="imgs/photo-1514895417822-13ccb2377139.jpg"/>
+        <img src="imgs/photo-1514984879728-be0aff75a6e8.jpg"/>
+        <img src="imgs/photo-1515161540794-d068c23cde65.jpg"/>
+        <img src="imgs/photo-1516222338250-863216ce01ea.jpg"/>
+        <img src="imgs/photo-1516386408840-d718a820a05c.jpg"/>
+        <img src="imgs/photo-1517423568366-8b83523034fd.jpg"/>
+        <img src="imgs/photo-1517519014922-8fc06b814a0e.jpg"/>
+        <img src="imgs/photo-1517849845537-4d257902454a.jpg"/>
+        <img src="imgs/photo-1517884206294-f455d802a8a0.jpg"/>
+        <img src="imgs/photo-1518374835801-2c7d993de05c.jpg"/>
+        <img src="imgs/photo-1518640165980-d3e0e2aa6c1e.jpg"/>
+        <img src="imgs/photo-1518717758536-85ae29035b6d.jpg"/>
+        <img src="imgs/photo-1519120430-a7d2287c986a.jpg"/>
+        <img src="imgs/photo-1519138130-85a949fdcb4f.jpg"/>
+        <img src="imgs/photo-1519658493417-b687d62a3111.jpg"/>
+        <img src="imgs/photo-1519677194310-7b6f32e6446f.jpg"/>
+        <img src="imgs/photo-1520087619250-584c0cbd35e8.jpg"/>
+        <img src="imgs/photo-1520580413066-ac45756bdc71.jpg"/>
+        <img src="imgs/photo-1521247560470-d2cbfe2f7b47.jpg"/>
+        <img src="imgs/photo-1521673461164-de300ebcfb17.jpg"/>
+        <img src="imgs/photo-1521907554502-7440e4702fc3.jpg"/>
+        <img src="imgs/photo-1522008693277-086ad6075b78.jpg"/>
+        <img src="imgs/photo-1522276498395-f4f68f7f8454.jpg"/>
+        <img src="imgs/photo-1522481416133-88f32903df83.jpg"/>
+        <img src="imgs/photo-1523626797181-8c5ae80d40c2.jpg"/>
+        <img src="imgs/photo-1524401033441-e87cab019093.jpg"/>
+        <img src="imgs/photo-1524549420729-4ac954eff5e5.jpg"/>
+        <img src="imgs/photo-1524587804055-d5ea4392da62.jpg"/>
+        <img src="imgs/photo-1524698604136-5a02fb1f7ec9.jpg"/>
+        <img src="imgs/photo-1525983360072-2ebda055ba40.jpg"/>
+        <img src="imgs/photo-1526660690293-bcd32dc3b123.jpg"/>
+        <img src="imgs/photo-1527526029430-319f10814151.jpg"/>
+        <img src="imgs/photo-1528301725143-1ba694832e77.jpg"/>
+        <img src="imgs/photo-1529088363398-8efc64a0eb95.jpg"/>
+        <img src="imgs/photo-1529259646408-5c50deb4cf6a.jpg"/>
+        <img src="imgs/photo-1529472119196-cb724127a98e.jpg"/>
+        </div>
+        <div class="dream">
+        <img src="imgs/photo-1491604612772-6853927639ef.jpg"/>
+        <img src="imgs/photo-1491930722919-a5fc9ad49a75.jpg"/>
+        <img src="imgs/photo-1492376791813-ee6dbb35caa3.jpg"/>
+        <img src="imgs/photo-1493916665398-143bdeabe500.jpg"/>
+        <img src="imgs/photo-1494913148647-353ae514b35e.jpg"/>
+        <img src="imgs/photo-1529906920574-628dc1e49f5a.jpg"/>
+        <img src="imgs/photo-1529927066849-79b791a69825.jpg"/>
+        <img src="imgs/photo-1530041539828-114de669390e.jpg"/>
+        <img src="imgs/photo-1530041686259-53d26f863313.jpg"/>
+        <img src="imgs/photo-1530116673063-340e0a0ec03e.jpg"/>
+        <img src="imgs/photo-1530126483408-aa533e55bdb2.jpg"/>
+        <img src="imgs/photo-1530281700549-e82e7bf110d6.jpg"/>
+        <img src="imgs/photo-1532753876631-2d5cf129df39.jpg"/>
+        <img src="imgs/photo-1534351450181-ea9f78427fe8.jpg"/>
+        <img src="imgs/photo-1534361960057-19889db9621e.jpg"/>
+        <img src="imgs/photo-1534551767192-78b8dd45b51b.jpg"/>
+        <img src="imgs/photo-1534669393585-1982aa863bbf.jpg"/>
+        <img src="imgs/photo-1535745023281-627f021e68b0.jpg"/>
+        <img src="imgs/photo-1535745049887-3cd1c8aef237.jpg"/>
+        <img src="imgs/photo-1535812859-6bfd2f132e78.jpg"/>
+        <img src="imgs/photo-1536012441472-aae6b3ce330f.jpg"/>
+        <img src="imgs/photo-1536809188428-e8ecf663d0be.jpg"/>
+        <img src="imgs/photo-1537019575197-df34a13f342c.jpg"/>
+        <img src="imgs/photo-1537151608828-ea2b11777ee8.jpg"/>
+        <img src="imgs/photo-1537151625747-768eb6cf92b2.jpg"/>
+        <img src="imgs/photo-1537151769678-eb003fb3a153.jpg"/>
+        <img src="imgs/photo-1537815749002-de6a533c64db.jpg"/>
+        <img src="imgs/photo-1539607437303-fd851475f119.jpg"/>
+        <img src="imgs/photo-1539692177343-b2b990faef15.jpg"/>
+        <img src="imgs/photo-1540180573456-803776ac2ac3.jpg"/>
+        <img src="imgs/photo-1540653767498-cd679b1faa23.jpg"/>
+        <img src="imgs/photo-1541364983171-a8ba01e95cfc.jpg"/>
+        <img src="imgs/photo-1541451563641-c2bdc370f58a.jpg"/>
+        <img src="imgs/photo-1542227422-f589a2124ffe.jpg"/>
+        <img src="imgs/photo-1542578951838-47d40e8b4f0d.jpg"/>
+        <img src="imgs/photo-1542991520-72983c2775a8.jpg"/>
+        <img src="imgs/photo-1543164888-462c8603cbd9.jpg"/>
+        <img src="imgs/photo-1543466835-00a7907e9de1.jpg"/>
+        <img src="imgs/photo-1543490258-4131d44881d7.jpg"/>
+        <img src="imgs/photo-1543554618-7e19c5e393d9.jpg"/>
+        <img src="imgs/photo-1543556153-01d3c066a72a.jpg"/>
+        <img src="imgs/photo-1544378382-5ea6d7768876.jpg"/>
+        <img src="imgs/photo-1544568100-847a948585b9.jpg"/>
+        <img src="imgs/photo-1544568104-5b7eb8189dd4.jpg"/>
+        <img src="imgs/photo-1545024602-5ac8042e0bc5.jpg"/>
+        <img src="imgs/photo-1545218553-6c2262f9f678.jpg"/>
+        <img src="imgs/photo-1546447147-3fc2b8181a74.jpg"/>
+        <img src="imgs/photo-1546460573-e6c02e39568a.jpg"/>
+        <img src="imgs/photo-1546491763-63828f477cc3.jpg"/>
+        <img src="imgs/photo-1546527868-ccb7ee7dfa6a.jpg"/>
+        <img src="imgs/photo-1546938837-895e2ab160fd.jpg"/>
+        <img src="imgs/photo-1546975490-e8b92a360b24.jpg"/>
+        <img src="imgs/photo-1547407139-3c921a66005c.jpg"/>
+        <img src="imgs/photo-1547480786-6552fae2dd51.jpg"/>
+        <img src="imgs/photo-1547482354-89d4259dbc4b.jpg"/>
+        <img src="imgs/photo-1548032844-8676ebc5f62e.jpg"/>
+        <img src="imgs/photo-1548199973-03cce0bbc87b.jpg"/>
+        <img src="imgs/photo-1548538136-1240693e37f3.jpg"/>
+        <img src="imgs/photo-1548672404-cebc2bd47277.jpg"/>
+        <img src="imgs/photo-1548948455-e263a71e6bbc.jpg"/>
+        <img src="imgs/photo-1566903451935-7e8835ed3e97.jpg"/>
+        <img src="imgs/photo-1567529684859-a9a376f57ad6.jpg"/>
+        </div>
+        <div class="dream">
+        <img src="imgs/photo-1496982411516-bfb7eb1c74e1.jpg"/>
+        <img src="imgs/photo-1497993950456-cdb57afd1cf1.jpg"/>
+        <img src="imgs/photo-1499789853431-fcbf274f57b9.jpg"/>
+        <img src="imgs/photo-1504208434309-cb69f4fe52b0.jpg"/>
+        <img src="imgs/photo-1504430225224-21a649ac91bc.jpg"/>
+        <img src="imgs/photo-1549291981-56d443d5e2a2.jpg"/>
+        <img src="imgs/photo-1549775924-433bdc7ea7a9.jpg"/>
+        <img src="imgs/photo-1549901139-68e9777f8795.jpg"/>
+        <img src="imgs/photo-1550159930-40066082a4fc.jpg"/>
+        <img src="imgs/photo-1550165703-d2ed566a8c4f.jpg"/>
+        <img src="imgs/photo-1550450888-a1ad510ccacc.jpg"/>
+        <img src="imgs/photo-1550948537-130a1ce83314.jpg"/>
+        <img src="imgs/photo-1550953581-a75aa86fec20.jpg"/>
+        <img src="imgs/photo-1551700376-d8e62a783fce.jpg"/>
+        <img src="imgs/photo-1551717743-49959800b1f6.jpg"/>
+        <img src="imgs/photo-1551730458-be400bef0161.jpg"/>
+        <img src="imgs/photo-1551730459-81d1f86e792f.jpg"/>
+        <img src="imgs/photo-1551730459-92db2a308d6a.jpg"/>
+        <img src="imgs/photo-1551779891-b83901e1f8b3.jpg"/>
+        <img src="imgs/photo-1551820170-c5bb060f5750.jpg"/>
+        <img src="imgs/photo-1552053831-71594a27632d.jpg"/>
+        <img src="imgs/photo-1553322378-eb94e5966b0c.jpg"/>
+        <img src="imgs/photo-1553776590-89774e24b34a.jpg"/>
+        <img src="imgs/photo-1553882809-a4f57e59501d.jpg"/>
+        <img src="imgs/photo-1554079501-1e3155dc26da.jpg"/>
+        <img src="imgs/photo-1554079501-b418a64a2543.jpg"/>
+        <img src="imgs/photo-1554199818-e19a3e4c9bc6.jpg"/>
+        <img src="imgs/photo-1554456854-55a089fd4cb2.jpg"/>
+        <img src="imgs/photo-1554692918-08fa0fdc9db3.jpg"/>
+        <img src="imgs/photo-1554692936-82776f9406db.jpg"/>
+        <img src="imgs/photo-1554692937-643f164bb243.jpg"/>
+        <img src="imgs/photo-1554716054-787a801e43da.jpg"/>
+        <img src="imgs/photo-1554830072-52d78d0d4c18.jpg"/>
+        <img src="imgs/photo-1554890448-414a2800333e.jpg"/>
+        <img src="imgs/photo-1554999793-321ce9d8a1fc.jpg"/>
+        <img src="imgs/photo-1555191525-74c91fc116c7.jpg"/>
+        <img src="imgs/photo-1555325084-b068599743c9.jpg"/>
+        <img src="imgs/photo-1556229174-5e42a09e45af.jpg"/>
+        <img src="imgs/photo-1556546346-ad2946663684.jpg"/>
+        <img src="imgs/photo-1556796879-160fd67614ae.jpg"/>
+        <img src="imgs/photo-1557495235-340eb888a9fb.jpg"/>
+        <img src="imgs/photo-1557997715-a71a84e9e727.jpg"/>
+        <img src="imgs/photo-1558237316-d4762d4b8ce7.jpg"/>
+        <img src="imgs/photo-1558349699-1e1c38c05eeb.jpg"/>
+        <img src="imgs/photo-1559190394-df5a28aab5c5.jpg"/>
+        <img src="imgs/photo-1559355946-519a96b93456.jpg"/>
+        <img src="imgs/photo-1560525821-d5615ef80c69.jpg"/>
+        <img src="imgs/photo-1560743173-567a3b5658b1.jpg"/>
+        <img src="imgs/photo-1560781854-d3d74a1ba2ae.jpg"/>
+        <img src="imgs/photo-1560807707-8cc77767d783.jpg"/>
+        <img src="imgs/photo-1560829571-6e9583e4a71a.jpg"/>
+        <img src="imgs/photo-1560967560-2a19f2ca05b2.jpg"/>
+        <img src="imgs/photo-1561037404-61cd46aa615b.jpg"/>
+        <img src="imgs/photo-1561438774-1790fe271b8f.jpg"/>
+        <img src="imgs/photo-1562176566-73c303ac1617.jpg"/>
+        <img src="imgs/photo-1562176566-e9afd27531d4.jpg"/>
+        <img src="imgs/photo-1562220058-1a0a019ab606.jpg"/>
+        <img src="imgs/photo-1562317305-58a17fe2c09e.jpg"/>
+        <img src="imgs/photo-1562813930-89f7d01095a7.jpg"/>
+        <img src="imgs/photo-1563237739-e433cbb3fd8f.jpg"/>
+        <img src="imgs/photo-1563889958784-7d0a4a068edc.jpg"/>
+        <img src="imgs/photo-1565194481104-39d1ee1b8bcc.jpg"/>
+        <img src="imgs/photo-1565708097881-bbf4ecf47cc1.jpg"/>
+        <img src="imgs/photo-1566418337549-5e829ccc62e8.jpg"/>
+        <img src="imgs/photo-1566756578171-cbf0bcadd71b.jpg"/>
+        </div>
+        </div>
+        </div>
+        <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__main">
+          <div class="column u-column-width">
+            <h4>About Patrona Puppy</h4>
+            <p>
+              This is website of a veteran want to share about all dogs she has met and research on. This is also a location for person love dogs and has desire to explore more about this creature.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../FAQ/faq.html">FAQ</a></li>
+              <li><a href="../Nutrition/nutrition.html">Dog Nutrition</a></li>
+              <li><a href="../gallery/gallery.html">Dog Breeds</a></li>
+              <li><a href="../image gallery/image-gallery.html">My Collection</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Follow Us On</h4>
+            <div class="social-media-handles">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

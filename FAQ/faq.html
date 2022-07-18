@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="patrona">
+  <head>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/564f634590d1bced690e0633/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+    <link rel="stylesheet" href="css/faq.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../imgs/faviconn.png">
+    <title>Patrona Puppy | FAQ</title>
+    <style>
+        .u-faq-open {
+            display: block !important;
+        }
+    </style>
+  </head>
+  <body ng-controller="mainController">
+    <!--HEADER-->
+    <header class="header">
+      <!--A CONTAINER FOR CONVENIENCE-->
+      <div class="header-content">
+        <!--MAIN NAVBAR-->
+        <nav class="nav-bar">
+          <a href="../index.html" class="nav-bar__brand">
+            <div class="brand-logo">
+              <img src="../imgs/Paw_Print.svg" alt="" />
+            </div>
+            <div class="brand-name">Patrona<span>Puppy</span></div>
+          </a>
+          <div class="nav-bar__items">
+            <ul class="nav-bar__links">
+              <li class="nav-bar__link"><a href="../index.html">Home</a>
+              </li>
+              <li class="nav-bar__link">Blog +
+                <div class="dropdown">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                  <a href="../FAQ/faq.html" class="option">FAQ</a>
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </div>
+              </li>
+              <li class="nav-bar__link"><a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+              </li>
+            </ul>
+            <div class="nav-bar__button">
+              <a href="../image gallery/image-gallery.html" class="btn">My Collection</a>
+            </div>
+            <div class="nav-bar__hamburger"  id="hamburger" ng-click="hamburger_menu=!hamburger_menu">
+              <i class="far fa-bars" id="ham-icon" ></i>
+            </div>
+        </nav>
+        <div class="navbar-dropdown u-display-block" id="menu" >
+          <ul class="navbar-dropdown__options" ng-class="{'u-hamburger-menu-full': hamburger_menu}">
+            <li class="navbar-dropdown__option">
+              <a href="../index.html" class="option">Home</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="#" class="option" id="blog" ng-click="blog_dropdown=!blog_dropdown">Blog &plus;</a>
+              <ul class="navbar-dropdown__option--menu" ng-class="{'u-blog_dropdown-full': blog_dropdown}">
+                <li class="menu-option">
+                  <a href="../Nutrition/nutrition.html" class="option">Dogs Nutrition</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../faq/faq.html" class="option">FAQ</a>
+                </li>
+                <li class="menu-option">
+                  <a href="../about us/about.html" class="option">About Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../gallery/gallery.html" class="option">Dog Breeds</a>
+            </li>
+            <li class="navbar-dropdown__option">
+              <a href="../image gallery/image-gallery.html" class="option ham-menu-btn my-collection">My Collection</a>
+            </li>
+          </ul>
+        </div>
+        <!--MAIN ANIMATED HEADER TEXT-->
+        <div class="header-text">
+          <h1 class="primary-heading">
+            <!--SEPARATING LINES FOR APPLICATION OF DIFFERENT ANIMATIONS-->
+            <span class="primary-heading__main">
+             Have an inquiry ?
+            </span>
+            <span class="primary-heading__sub">
+              we have the appropriate response
+            </span>
+          </h1>
+          <a href="#faq" class="btn">Take a look !</a>
+        </div>
+      </div>
+    </header>
+    <!--MAIN CONTENT-->
+    <main id="faq">
+        <!--VACCINATION ACCORDION SECTION-->
+        <section class="vaccine-section faq-section" id="faq">
+            <h2>about Vaccine</h2>
+            <!--VACCINATION QUESTION 1 ACCORDION-->
+            <div class="faq-accordion">
+                <div class="vaccine-section__question question">
+                    <div>
+                        Why should you vaccinate your dog or puppy ?
+                    </div>
+                    <div class="plus-icon">
+                        &plus;
+                    </div>
+                </div>
+            <!--VACCINATION ANSWER 1-->
+                <div class="vaccine-section__answer answer">
+                    Dog vaccinations will help your dog to be protected against some of the most common and most dangerous infectious diseases. For young dogs especially, it is critical to get the right vaccinations according to the puppy vaccination schedule to help build up their immunity.
+                </div>
+            <!--VACCINATION QUESTION 2 ACCORDION-->
+                <div class="vaccine-section__question question">
+                    <div>
+                        What are vaccines and how do they work?
+                    </div>
+                    <div class="plus-icon">
+                        &plus;
+                    </div>
+                </div>
+            <!--VACCINATION ANSWER 2-->
+                <div class="vaccine-section__answer answer">
+                    
+            Dog and puppy vaccinations are basically a training camp for your dog’s immune system. The white blood cells in his body will produce proteins (so called antibodies) that will, together with other white blood cells, fight the infectious agent (called antigens). It is recommended to top up your dog’s vaccinations frequently to make sure his body still has enough of the trained antibodies to be able to fight the infectious germs when needed.
+                        </div>
+            <!--VACCINATION QUESTION 3 ACCORDION-->
+                        <div class="vaccine-section__question question">
+                            <div>
+                                Which are the most common dog and puppy vaccinations?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+            <!--VACCINATION ANSWER 3-->
+                        <div class="vaccine-section__answer answer">
+                            The Australian Veterinary Association (AVA) splits recommended dog vaccinations into “core” and “non-core” vaccines.
+                        </div>
+            <!--VACCINATION QUESTION 4 ACCORDION-->
+                        <div class="vaccine-section__question question">
+                            <div>
+                                Vaccination Schedules for Puppies and Dogs
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+            <!--VACCINATION ANSWER 4-->
+                        <div class="vaccine-section__answer answer">
+                            The following dog vaccination schedule is based on the recommendation of the Australian Veterinary Association (AVA). However, your local vet will advise on the recommended dog vaccination schedule for your pet.
+                        </div>
+            <!--VACCINATION QUESTION 5 ACCORDION-->
+                        <div class="vaccine-section__question question">
+                            <div>
+                                ‘Over-vaccinating’? Titre testing may be an option for you.
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+            <!--VACCINATION ANSWER 5-->
+                        <div class="vaccine-section__answer answer">
+                            Over the last decade there has been increasing debate about the over-vaccination of pets. Depending on the vaccine used and the individual animal, immunity can last significantly longer than 12 months. Some pet owners worry about vaccinating their pet whilst its immunisation is still sufficient.
+                        </div>
+            <!--VACCINATION QUESTION 6 ACCORDION-->
+                        <div class="vaccine-section__question question">
+                            <div>
+                                Dog and Puppy Vaccinations Explained
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+            <!--VACCINATION ANSWER 6-->
+                        <div class="vaccine-section__answer answer">
+                            The recommended puppy and dog vaccinations will help protect your dog against a number of very serious diseases. Below we outline some of the more common diseases and how vaccinations help prevent them.
+                        </div>
+            </div>
+            
+        </section>
+        <!--CLEANING ACCORDION SECTION-->
+        <section class="cleaning-section faq-section">
+            <h2>about CLEANING</h2>
+            <div class="faq-accordion">
+                    <!--CLEANING QUESTION 1 ACCORDION-->
+                        <div class="cleaning-section__question question">
+                            <div>
+                                How Do I Choose The Best Puppy Food?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <!--CLEANING ANSWER 1-->
+                        <div class="cleaning-section__answer answer">
+                            What you feed your puppy now has a direct effect on his future health, growth and development, so it's not surprising that I get asked a LOT of questions about diet and puppy food.
+Choose puppy kibble that has the wording 'a complete and balanced diet' on the package. This shows it meets the standards set by the AAFCO (Association of American Feed Control Officials).
+You need to be sure the dog food you pick has a good source of high quality protein as it's first ingredient. Chicken or Lamb are both good choices.
+Puppies grow very rapidly, and to support that growth they need a diet high in protein, fat, vitamins and minerals.
+Protein values should be around 25% plus and fat around 15%. If you have a large breed or small breed puppy, look for a puppy food that is especially designed to meet their specific requirements.
+You can see a list of what I consider to be the best puppy foods on the market here - Best Puppy Food Choices, also check out my Puppy Food Reviews page.
+                        </div>
+                        <!--CLEANING QUESTION 2 ACCORDION-->
+                        <div class="cleaning-section__question question">
+                            <div>
+                                How Can I Get Rid Of Dog Urine Stains & Odor?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <!--CLEANING ANSWER 2-->
+                        <div class="cleaning-section__answer answer">
+                            Even when potty training is going smoothly, there will be times when your puppy has an 'accident'. It's one of those 'puppy FAQs of life'.
+To avoid having your carpets ruined you need to act quickly, and tackle those puddles in the right way.
+To be effective, you need to blot up any liquid that is in your carpet. Then you need to rinse the area well with clean, cool water and blot that up too.
+Follow this with an application of an enzymatic-based cleaner/odor remover. Allow this to soak into the carpet for at least 10 minutes and then blot up the excess. Allow area to dry thoroughly.
+You may need to repeat this process more than once.
+For more information on how to keep your carpets stain and odor free, and find out which product REALLY works, see my Dog Urine Cleaning and Best Dog Urine Cleaning Products pages.
+                        </div>
+                        <!--CLEANING QUESTION 3 ACCORDION-->
+                        <div class="cleaning-section__question question">
+                            <div>
+                                Does My Puppy Have Worms & How Do I Treat Them?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <!--CLEANING ANSWER 3-->
+                        <div class="cleaning-section__answer answer">
+                            A huge percentage of puppies have worms and if you're a new puppy parent, it's something you may well have to deal with.
+Some worms can be seen in your dog's feces, and in severe cases of roundworm infestation your pup may even have worms in his vomit. Other symptoms of worm infestation include a round, distended belly, a dull, rough coat or a cough.
+Although very common, worms can make your puppy quite sick...at the very least he'll feel and look 'out of sorts'.
+You will need your veterinarian to diagnose and confirm the infestation, and the type of worm involved. They will then prescribe, or administer, the appropriate de-wormer. Do not use over-the-counter medications as they can be ineffective at best, and harmful at worst.
+Heartworms are a different story, but you are unlikely to find these in a young puppy.
+You can learn more about worms, causes, symptoms and treatments on my Puppy Worms page
+                        </div>
+                        <!--CLEANING QUESTION 4 ACCORDION-->
+                        <div class="cleaning-section__question question">
+                            <div>
+                                Help - My Puppy Has Diarrhea!
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <!--CLEANING ANSWER 4-->
+                        <div class="cleaning-section__answer answer">
+                            This is one of those questions where it's not necessarily easy to figure out the answer without veterinary help.
+Diarrhea in puppies is very common and can be a sign of a simple tummy upset due to a change in diet for example - or a deadly serious illness such as Parvo.
+If your puppy has diarrhea that looks has the consistency of chocolate pudding, but otherwise seems okay, chances are he's eaten something he shouldn't.
+If he's not vomiting, is alert, playful and bright-eyed you can probably afford to wait and see for a while. BUT if he's not feeling better within 24 hours, or seems to be getting worse, call your veterinarian right away.
+If your puppy's diarrhea is severe and watery, he's vomiting and/or seems lethargic, has dull eyes and looks like he feel unwell you need to get in touch with your veterinarian right away.
+If it's after hours you should contact your nearest 24 hour emergency pet clinic. This could be a life-or-death situation.
+For more detailed information on this common puppy complaint, check out my Puppy Diarrhea page.
+                        </div>
+            </div>
+            
+        </section>
+        <section class="training-section faq-section">
+            <h2>About TRAINING</h2>
+            <div class="faq-accordion">
+
+                        <div class="training-section__question question">
+                            <div>
+                                How Can I Train My Puppy Properly?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="training-section__answer answer">
+                            If you want your precious little puppy to grow up to be a well-behaved companion, you need to teach him or her some manners, and some basic obedience commands.
+A fair number of puppy FAQs center around puppy behavior, and learning what behavior is acceptable and what isn't should be some of his earliest lessons!
+If you want your pup to understand what you expect of him, there are three simple steps that you MUST follow : tell your puppy what you want him to do
+help him to perform that behavior
+reward him with treats and/or praise when he is successful Several short training sessions per day are much better than one longer one because you want him to enjoy his trainings sessions and think they're a fun part of his day.
+The first thing to teach your little one is to recognize his name. After that, the basic obedience commands that you want your pup to teach him are "sit", "come" and "down". You can read more about this on my Puppy Training Page
+                        </div>
+                        <div class="training-section__question question">
+                            <div>
+                                How Do I Introduce My New Puppy To The Resident Dog?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="training-section__answer answer">
+                            Most dogs learn to get along with a newcomer (and some super-sociable souls accept them right away), but if your older dog is treating the new baby with something less than unbridled enthusiasm he won't be the first to do so!
+When choosing a new dog to integrate into your family, it's best to choose one of the opposite sex to the resident dog. Two same-sex dogs are less likely to get along as adults, especially if they're not neutered/spayed.
+Also consider size and temperament, an older dog with a high prey drive may not be the best match for a puppy from a tiny, fast-moving breed such as the Yorkshire Terrier.
+Make the initial introductions under supervision, and expect some hesitation on the part of either pooch.
+Always remember to show lots of affection to your older dog.
+It's sometimes difficult to tear yourself away from an adorable new puppy, but make a point of greeting, feeding and petting the older dog first, as it reinforces his status (in both his eyes, and the eyes of the new puppy) and helps to maintain a natural transition into the 'pecking order'.
+You can find more detailed information on handling these introductions on my Introducing A New Puppy page.
+My Dog Barks & Destroys Stuff When I'm Out - What Do I Do? Does your puppy or dog drive the neighbors crazy with his barking and howling? Does he try to remodel your home (maybe by chewing holes in the walls/door, or destroying carpets and furniture) while you're out?
+If so, chances are he's suffering from separation anxiety. There are levels of separation anxiety, ranging from mild distress to hysteria (on the part of the dog, not you. Although the sight of your Persian rug in tatters has the potential to trigger a hysterical reaction!).
+Puppies can be scared for a number of reasons, or experience separation anxiety.
+There are all sorts of treatments for this problem, depending on the level of anxiety, what's triggering it and how old he is.
+Everything from simple herbal products, calming CD's, or behavior modification training can work.
+By using one, or a combination of treatments, you should be able to lower your dogs' anxiety levels and teach him that it's okay to be left alone for a while, and that you always return.
+To find out more about how you can help your pet overcome his fears and bring peace back to your home, check out my Dog Training For Separation Anxiety and Dog Separation Anxiety Medication pages.
+                        </div>
+                        <div class="training-section__question question">
+                            <div>
+                                Why Is My Pup Always Licking/Scratching Himself?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="training-section__answer answer">
+                            Constant licking and/or scratching and red, itchy skin or hair loss are all signs of dog allergies.
+I think it's important to point out in this Puppy FAQs page that dogs suffer from allergies just as people do!
+There are many different causes and triggers for dog allergies, but most result in skin problems and a variety of allergies
+These include:
+Flea allergy
+Inhalant allergy
+Dog food allergy
+Contact allergy
+There are many, many different ways to treat allergies in dogs, and of course the treatment depends on the trigger!
+                        </div>
+                        <div class="training-section__question question">
+                            <div>
+                                How old should my puppy be when I bring him home?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="training-section__answer answer">
+                            It's critically important to realize that puppies need to stay with their mother and littermates through 7 weeks old, at minimum. The 5-7 week period is so vital, being when puppies learn social lessons on how to control the intensity of their bite (through play with littermates), how to accept discipline and respond to it properly, and how to correctly interpret canine body language.
+Pups placed in homes before going through this stage tend to play-bite harder, and continue the behavior further into adolescence, than pups who remain with the litter through 7 weeks old. And, of course, a lack of understanding canine body language can lead to a host of problems - inability to play properly, fear, over-excitement, or even aggression toward other dogs.
+A further consideration is that 7 weeks is the age when most experienced breeders and animal professionals believe that puppy aptitude and temperament testing is the most reliable. So, if your breeder is doing one of these tests to help determine which puppy will be best for you, placement would be at or after 7 weeks old. That said, oftentimes pups will do better going home somewhat later than 7 weeks old, provided the breeder is equipped to train and socialize the litter. With my own breed, I find 9 weeks to be a good age, in that the pups are generally emotionally ready and eager to make the transition and to bond to new owners. Some of the smaller breeds can take longer to mature physically, and may adjust more easily - and housetrain more readily - when they are placed at 10 or even 12 weeks of age.
+Whatever the age, it's important to stress that, if the breeder keeps the pups past 7 weeks old, he or she must be committed to taking the time to regularly and thoughtfully introduce each pup individually to new sights, sounds, surfaces, people, animals, and places.
+                        </div>
+            </div>
+            
+        </section>
+        <!--ENVIROMENT EFFECTION ACCORDION SECTION-->
+        <section class="enviroment-effect-section faq-section">
+            <h2>about ENVIROMENT EFFECTION</h2>
+            <div class="faq-accordion">
+                        <div class="enviroment-effect-section__question question">
+                            <div>
+                                Any recommendations for when we first arrive home with the puppy?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="enviroment-effect-section__answer answer">
+                            Your pup should be given some time to relieve himself outside first, before bringing him inside. If he's too distracted and doesn't go, take him inside, but carry him, or only set him down for brief periods, then take him back outside. It's important that any elimination gets done in what is to be his regular potty area, or at the very least outside, that first time.
+Once your pup has relieved himself, feel free to allow him to explore a bit - carefully supervised, of course! He doesn't need to see the whole house, but an exploration of the main living areas will help him orient and adjust. It's fine, then, to offer a drink of water, but hold off on giving any food. Your pup will most likely need a nap after all the excitement, and very likely his stomach won't be ready for food until after that.
+                        </div>
+                        <div class="enviroment-effect-section__question question">
+                            <div>
+                                When should I switch to an adult dog food?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="enviroment-effect-section__answer answer">
+                            SFor small- and medium-breed puppies, move to a high-quality adult formula such as EUKANUBA™ when he turns 1 year old. Large breed dogs should switch by the start of their second year.
+                        </div>
+                        <div class="enviroment-effect-section__question question">
+                            <div>
+                                How often should I groom and/or bathe my pet?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="enviroment-effect-section__answer answer">
+                            Longhaired breeds should be brushed out every day or so (give your dog a treat when you're done so he learns that grooming is rewarding). Bathe your dog when you notice an odor, but avoid overdoing it, as his skin is sensitive.
+                        </div>
+                        <div class="enviroment-effect-section__question question">
+                            <div>
+                                How Can I Help My Constipated Puppy?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="enviroment-effect-section__answer answer">
+                            Hold a treat in front of your dog's nose, and then raise it over his head. As his nose comes up, his head should come down. Say "Sit!" Reward him when his hindquarters touch the ground. Repeat the drill and gradually remove the food used during the lesson. (But always give him a treat afterward if he's followed your rules.) After he learns the command, tell him to "Sit!" each time he greets someone.
+                        </div>
+            </div>
+            
+        </section>
+        <!--NUTRITION ACCORDION SECTION-->
+        <section class="nutrition-section faq-section">
+            <h2>about NUTRITION</h2>
+            <div class="faq-accordion">
+                        <div class="nutrition-section__question question">
+                            <div>
+                                How do I teach my pup not to jump on people?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="nutrition-section__answer answer">
+                            Hold a treat in front of your dog's nose, and then raise it over his head. As his nose comes up, his head should come down. Say "Sit!" Reward him when his hindquarters touch the ground. Repeat the drill and gradually remove the food used during the lesson. (But always give him a treat afterward if he's followed your rules.) After he learns the command, tell him to "Sit!" each time he greets someone.
+                        </div>
+                        <div class="nutrition-section__question question">
+                            <div>
+                                
+                            How are the nutritional needs for different puppies' weight?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="nutrition-section__answer answer">
+                            Small-breed pups develop much faster than other breeds of dogs. They have faster metabolic rates and need higher levels of protein, fat, calcium, and phosphorus. Meanwhile, large-breed dogs aren't considered full grown until they're nearly 2 years old. And while many people think that large breeds should eat huge quantities of food, they simply need meals that pack a nutritional punch. (If overfed, these animals risk putting on too much weight too quickly and could develop skeletal problems.) The scientists at EUKANUBA™ have developed specific formulas for every size puppy so you'll be sure to know they've got all the nutrition they need to grow up healthy.
+                        </div>
+                        <div class="nutrition-section__question question">
+                            <div>
+                                
+                            How soon does my new puppy need to see a vet?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="nutrition-section__answer answer">
+                            As soon as possible. Many breeders and adoption agencies will have something like a 48-hour guarantee, so you want to get it done in that time. But even without that, you still should get the puppy in within a day or two. That way, if there’s something wrong, we can catch it early and get it before it becomes a big problem.
+It also gives us a chance to talk with owners about what it takes to raise a puppy. We need to talk about worms, feeding, vaccinations, the financial aspect of owning a pet, and everything else they can expect over the life of their dog.
+The owners should bring in their list of questions, too. You need to ask your vet every question that comes to mind. You can’t ask too many questions. Your veterinarian should be willing to block out time for that.
+                        </div>
+                        <div class="nutrition-section__question question">
+                            <div>
+                                
+                            Do I need to puppy proof my house? If so, how do I do it?
+                            </div>
+                            <div class="plus-icon">
+                                &plus;
+                            </div>
+                        </div>
+                        <div class="nutrition-section__answer answer">
+                            Puppies are like children. They love to learn and they’re inquisitive. And just like with children, you have to keep things they can chew on and swallow out of reach. So keep toys away, and don’t leave food where they can get to it, especially candy or foods that could make them sick. Keep trash cans secured or they will get into them and eat bones and beer bottle tops and other things that are dangerous. I can’t tell you how many beer bottle tops I’ve taken out of puppies’ bellies.
+The biggest thing we see in our emergency room with puppies is that they’ve swallowed something. They swallow balls, a sock, a piece of a plastic toy. Puppies love to chew on plastic.
+                        </div>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-content__main">
+            <div class="column u-column-width">
+              <h4>About Patrona Puppy</h4>
+              <p>
+                This is website of a veteran want to share about all dogs she has met and research on. This is also a location for person love dogs and has desire to explore more about this creature.
+              </p>
+            </div>
+            <div class="column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../FAQ/faq.html">FAQ</a></li>
+                <li><a href="../Nutrition/nutrition.html">Dog Nutrition</a></li>
+                <li><a href="../gallery/gallery.html">Dog Breeds</a></li>
+                <li><a href="../image gallery/image-gallery.html">My Collection</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Follow Us On</h4>
+              <div class="social-media-handles">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="../script/script.js"></script>
+    <script src="script/faq.js"></script>
+</body>
